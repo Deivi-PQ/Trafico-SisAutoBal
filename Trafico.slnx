@@ -1,0 +1,13 @@
+<Solution>
+  <Folder Name="/01 BusinessLayer/">
+    <Project Path="Trafico.BusinessObjects/Trafico.BusinessObjects.csproj" Id="c17346a9-9ec7-4109-9a1e-d48f59542d57" />
+    <Project Path="Trafico.DataObjects/Trafico.DataObjects.csproj" Id="f7ef6ca6-11f0-4353-a370-32d7795f60f4" />
+    <Project Path="Trafico.Facade/Trafico.Facade.csproj" Id="2b1c1b56-85da-44c0-98f2-1c537533f4bf" />
+  </Folder>
+  <Folder Name="/02 Libreria/">
+    <File Path="Libraries/LibreriaBSNet.v2.dll" />
+    <File Path="Libraries/LibreriaBSNetCore/LibreriaBSNetCore.v1.dll" />
+    <File Path="Libraries/log4net.dll" />
+  </Folder>
+  <Project Path="Trafico.WebApi/Trafico.WebApi.csproj" />
+</Solution>

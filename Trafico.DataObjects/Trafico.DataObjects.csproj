@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ComunData\ComunDao.cs" />
+    <Compile Remove="Reportes\RptTranspMaterialDao.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EnterpriseLibrary.Data.NetCore" Version="6.3.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trafico.BusinessObjects\Trafico.BusinessObjects.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LibreriaBSNetCore.v1">
+      <HintPath>..\Libraries\LibreriaBSNetCore\LibreriaBSNetCore.v1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ComunData\" />
+    <Folder Include="Reportes\" />
+  </ItemGroup>
+
+</Project>

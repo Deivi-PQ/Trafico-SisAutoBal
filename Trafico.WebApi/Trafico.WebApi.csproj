@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GoogleAuthenticator" Version="3.2.0" />
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="8.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="ReportViewerCore.NETCore" Version="15.1.26" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Trafico.BusinessObjects\Trafico.BusinessObjects.csproj" />
+    <ProjectReference Include="..\Trafico.Facade\Trafico.Facade.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LibreriaBSNetCore.v1">
+      <HintPath>..\Libraries\LibreriaBSNetCore\LibreriaBSNetCore.v1.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
